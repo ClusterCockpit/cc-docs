@@ -1,0 +1,15 @@
+enabled: true
+id: "partners"
+
+content:
+  title: "ClusterCockpit is used at"
+  items:
+    - name: "Friedrich-Alexander-Universität Erlangen-Nürnberg"
+      link: "https://hpc.fau.de/"
+      image: "images/fau.png"
+    - name: "German Climate Computing Center"
+      link: "https://www.dkrz.de/"
+      image: "images/dkrz.png"
+    - name: "Universität Paderborn"
+      link: "https://pc2.uni-paderborn.de"
+      image: "images/uni-paderborn.png"

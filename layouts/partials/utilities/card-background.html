@@ -1,0 +1,13 @@
+{{ $path := .background }}
+{{ with resources.Get $path }}
+<div class="card card-wp text-white card-has-bg click-col" style="background-image:url('{{ .Permalink }}');">
+    <img class="card-img d-none" src="{{ .Permalink }}">
+    {{ end }}
+    <div class="card-img-overlay d-flex flex-column">
+        <div class="card-body">
+            <small class="text-warning mb-2">{{ .wp }}</small>
+            <h4 class="card-title mt-0 "><a class="text-white" href="#">{{ .title }}</a></h4>
+            <p>{{ .text }}</p>
+        </div>
+    </div>
+</div>

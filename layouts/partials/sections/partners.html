@@ -1,0 +1,22 @@
+<section class="section brands py-5">
+    <div class="container">
+        <div class="row">
+            {{ with .content.title }}
+            <div class="col-12">
+                <h3 class="fs-2 fw-bold text-primary text-center pb-3">{{ . }}</h3>
+            </div>
+            {{ end }}
+        </div>
+        <div class="row align-items-center justify-content-center">
+            {{ range .content.items }}
+            <div class="col px-2 my-2 text-center">
+                {{ $image := (resources.ByType "image").GetMatch .image }}
+                <a href="{{ .link }}">
+                    <img class="" src="{{ $image.Permalink }}" alt="{{ .name }}" width="{{ div $image.Width 3 }}"
+                        height="{{ div $image.Height 3 }}">
+                </a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

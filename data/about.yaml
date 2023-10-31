@@ -1,0 +1,36 @@
+enabled: true
+id: "about"
+
+content:
+  title: "What is it good for?"
+  text: "ClusterCockpit is a framework for
+    job-specific performance and power monitoring on distributed HPC
+    clusters. The focus is on simple installation and maintenance, high
+    security and intuitive usage."
+
+  cards:
+    - background: "/images/devops.jpg"
+      title: "HPC users"
+      wp: "Target group"
+      text: "Overview about running and past batch jobs. Access to various performance metrics including hardware performance counter data. 
+        Powerful filter and sorting of batch jobs. Ability to group jobs using job tags."
+      lead: ""
+      link: "/#"
+
+    - background: "/images/optimisation.jpg"
+      title: "Support staff"
+      wp: "Target group"
+      text: "Overview about all clusters. Powerful filtering and sorting of batch job lists. Customisable statistical analysis of jobs. User list with usage statistics. Status view for all clusters."
+      lead: ""
+      link: "/#"
+
+    - background: "/images/circuit.jpg"
+      title: "Administrators"
+      wp: "Target group"
+      text: "Single file deployment of web backend and metric store. Systemd
+         setup for easy control. RPM and DEB packages for node agent.
+         Authentication mechanisms: Local account, LDAP directory, and JWT token.
+         REST API for integration in existing monitoring and batch job scheduler
+         infrastructure."
+      lead: ""
+      link: "/#"
